@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% for key, values in pirate_groups.items %}
+    <a href="/{{key}}">
+    <div class="holder">
+        <h1> {{values.name}} </h1>
+        <img  src="{{values.pic}}" alt="pirates">
+    </div>
+    </a>
+    {% endfor %}
+{% endblock content %}

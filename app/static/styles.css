@@ -1,0 +1,130 @@
+body {
+    background-image: url(images/piece_back.jpg);
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    justify-items: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+header {
+    grid-column: 2/3;
+    margin: 3em;
+    height: 5em;
+    width: 80%;
+    background-color: #D7B18D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+    box-shadow: 0 0 10px 5px black;
+    border: black solid .1em;
+}
+
+header:hover {
+    opacity: 97%;
+}
+
+header p {
+    font-size: 4em;
+    font-family: 'Pirata One', cursive;
+    letter-spacing: 1px;
+    color: #410013;
+    font-weight: 600;
+}
+
+header p a {
+    text-decoration: none;
+    color: #410013;
+}
+
+header p a:hover {
+    text-shadow: 2px 2px 2px gray;
+    font-size: 1.1em;
+}
+
+.card {
+    grid-column: 2/3;
+    height: 30em;
+    width: 85%;
+    background-color: #D7B18D;
+    border-radius: 1em;
+    box-shadow: 0 0 10px 5px black;
+    border: black solid .1em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover {
+    opacity: 97%;
+}
+
+.holder {
+    height: 13em;
+    width: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.holder:hover {
+    text-shadow: 2px 2px 2px gray;
+    font-size: 1.2em;
+}
+
+.holder h1 {
+    font-size: 2em;
+    color: #410013;
+    text-align: center;
+    font-family: 'Pirata One', cursive;
+}
+
+.holder img {
+    height: 5em;
+    width: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    color: #410013;
+    font-family: 'Pirata One', cursive;
+    font-size: 2.5em;
+    align-self: center;
+    top: 4.5em;
+    position: absolute;
+    font-weight: bolder;
+}
+
+.group_photo {
+    height: 20em;
+    width: auto;
+    position: absolute;
+    align-self: flex-start;
+    top: 18em;
+    margin-left: 8em;
+}
+
+ul {
+    align-self: flex-end;
+    margin-top: 4em;
+    margin-right: 2em;
+    position: absolute;
+}
+
+ul li {
+    color: #410013;
+    font-family: 'Pirata One', cursive;
+    font-size: 1.5em;
+}
+
+
+/* #D7B18D */

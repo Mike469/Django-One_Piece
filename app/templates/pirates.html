@@ -1,0 +1,22 @@
+{% extends 'base.html' %} {% load static %}
+{% block content %}
+    <h2>{{pirate.name}}</h2>
+    {% if  pirate.name == "Luffy's Crew"%}
+        <img class="group_photo" src=" {% static 'images/straw_hat.webp' %} " alt="Pirate Group">
+    {% elif pirate.name == "Shank's Crew"%}
+        <img class="group_photo" src=" {% static 'images/shanks_crew.png' %} " alt="Pirate Group">
+    {% elif pirate.name == "Big Mom's Crew"%}
+        <img class="group_photo" src=" {% static 'images/big_mom.png' %} " alt="Pirate Group">
+    {% elif pirate.name == "Kaido's Crew"%}
+        <img class="group_photo" src=" {% static 'images/kaido_crew.png' %} " alt="Pirate Group">
+    {% elif pirate.name == "Doflamingo's Crew"%}
+        <img class="group_photo" src=" {% static 'images/doflamingo_crew.webp' %} " alt="Pirate Group">
+    {% elif pirate.name == "Law's Crew"%}
+        <img class="group_photo" src=" {% static 'images/law_crew.webp' %} " alt="Pirate Group">
+    {% endif %}
+    <ul>
+        {% for members in pirate.members %}
+            <li>{{members}}</li>
+        {% endfor %}
+    </ul>
+{% endblock content %}
